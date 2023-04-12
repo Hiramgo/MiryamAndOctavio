@@ -1544,13 +1544,12 @@ form label {
   outline: none;
 }
 
-/* se comenta para que no salga en la pagina el menu pequeño */
-/* .fh5co-nav-toggle {
+.fh5co-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
   text-decoration: none;
-} */
+}
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
 }
@@ -1641,7 +1640,8 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    /* se pone none para que no salga el menu pqueño HGS */
+    display: none;
   }
 }
 
